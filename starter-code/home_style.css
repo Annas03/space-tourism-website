@@ -1,0 +1,117 @@
+body
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url("assets/home/background-home-desktop.jpg");
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header
+{
+    display: flex;
+    width:90vw;
+    margin:5.2rem auto 0;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 1.3rem;
+    position: relative;
+    
+}
+.line
+{
+    width:39rem;
+    height:0.1em;
+    background-color:rgba(108, 99, 99, 0.259);
+    margin-left: 5rem;
+    z-index: 1;
+}
+.nav-bar
+{
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    width:63rem;
+    right: -6%;
+    padding-left: 6rem;
+    backdrop-filter:blur(30px);
+    min-height:2rem;
+}
+.nav-item 
+{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 4.7rem;
+    margin-right: 1.5rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    padding:2rem 0;
+    border-bottom: 2px solid white;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+}
+.num
+{
+    font-weight: bold;
+}
+section
+{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 70vw;
+    margin:18rem auto 0;
+}
+.explore
+{
+    align-self:flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.explore a
+{
+    font-family:'Bellefair', serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.01rem;
+    text-decoration: none;
+    color:black;
+}
+.content
+{
+    max-width: 29em;
+}
+.content h1
+{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+    word-spacing: 0.7rem;
+}
+.content p
+{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 2.5rem;
+    line-height: 2.5rem;
+    font-size:1.3rem;
+    letter-spacing: 0.1rem;
+}
+#space
+{
+    font-family:'Bellefair', serif;
+    position: relative;
+    top:1rem;
+    font-size: 8.9rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+

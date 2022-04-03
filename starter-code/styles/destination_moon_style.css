@@ -1,0 +1,112 @@
+body
+{
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header
+{
+    display: flex;
+    width:90vw;
+    margin:5.2rem auto 0;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 1.3rem;
+    position: relative;
+    
+}
+.line
+{
+    width:39rem;
+    height:0.1em;
+    background-color:rgba(108, 99, 99, 0.259);
+    margin-left: 5rem;
+    z-index: 1;
+}
+.nav-bar
+{
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    width:63rem;
+    right: -6%;
+    padding-left: 6rem;
+    backdrop-filter:blur(30px);
+    min-height:2rem;
+}
+.nav-item 
+{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 4.7rem;
+    margin-right: 1.5rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    padding:2rem 0;
+    border-bottom: 2px solid white;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+}
+.num
+{
+    font-weight: bold;
+}
+section
+{
+    border: 1px solid white;
+    margin-top: 3rem;
+    width: 75vw;
+    margin:7rem auto 0;
+}
+.main-content
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-div, .right-div
+{
+    border: 1px solid green;
+}
+.right-div
+{
+    width: 30rem;
+    align-self: flex-start;
+}
+.moon-list
+{
+    width:17rem;
+    padding-left:0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.moon
+{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+}
+.selected-destination
+{
+    font-family:'Bellefair', serif;
+    font-size: 100px;
+    font-weight: 500;
+    margin:2.5rem 0 0;
+}
+.about-destination p
+{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+    font-size:1.3rem;
+    letter-spacing: 0.1rem;
+}

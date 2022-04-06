@@ -38,6 +38,14 @@ header
     backdrop-filter:blur(30px);
     min-height:2rem;
 }
+#two:hover, #three:hover, #four:hover
+{
+    border-bottom: 2px solid rgba(199, 187, 187, 0.407);  
+}
+#one
+{
+    border-bottom: 2px solid white;
+}
 .nav-item 
 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -47,7 +55,7 @@ header
     letter-spacing: 0.1rem;
     font-size: 1.1rem;
     padding:2rem 0;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid transparent;
 }
 a
 {

@@ -38,6 +38,14 @@ header
     backdrop-filter:blur(30px);
     min-height:2rem;
 }
+#one:hover, #three:hover, #four:hover
+{
+    border-bottom: 2px solid rgba(199, 187, 187, 0.407);  
+}
+#two
+{
+    border-bottom: 2px solid white;
+}
 .nav-item 
 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -47,7 +55,7 @@ header
     letter-spacing: 0.1rem;
     font-size: 1.1rem;
     padding:2rem 0;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid transparent;
 }
 a
 {
@@ -77,7 +85,7 @@ section
 }
 .right-div
 {
-    width: 30rem;
+    width: 28rem;
     align-self: flex-start;
 }
 .moon-list
@@ -89,11 +97,18 @@ section
     align-items: center;
     list-style-type: none;
 }
-.moon
+#moon
+{
+    font-size: 20px;
+    font-weight:500;
+    border-bottom: 2px solid white;
+}
+.destinations
 {
     font-family:'Barlow Condensed', sans-serif;
     font-size: 18px;
     letter-spacing: 2.7px;
+    height:1.5rem;
 }
 .selected-destination
 {
@@ -105,8 +120,9 @@ section
 .about-destination p
 {
     font-family: 'Barlow Condensed', sans-serif;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
     line-height: 2rem;
-    font-size:1.3rem;
+    font-size:1.2rem;
+    font-weight: 500;
     letter-spacing: 0.1rem;
 }

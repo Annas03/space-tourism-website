@@ -32,8 +32,8 @@ header
     position: absolute;
     display: flex;
     list-style-type: none;
-    width:63rem;
-    right: -6%;
+    width:57rem;
+    right: -1%;
     padding-left: 6rem;
     backdrop-filter:blur(30px);
     min-height:2rem;
@@ -68,8 +68,6 @@ a
 }
 section
 {
-    border: 1px solid white;
-    margin-top: 3rem;
     width: 75vw;
     margin:7rem auto 0;
 }
@@ -78,18 +76,21 @@ section
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 3.5rem;
 }
-.left-div, .right-div
+/* .left-div, .right-div
 {
     border: 1px solid green;
-}
+} */
 .right-div
 {
-    width: 28rem;
+    width: 29rem;
     align-self: flex-start;
 }
 .moon-list
 {
+    margin-bottom: 0;
+    margin-top: 0;
     width:17rem;
     padding-left:0;
     display:flex;
@@ -103,19 +104,24 @@ section
     font-weight:500;
     border-bottom: 2px solid white;
 }
+#mars:hover, #europa:hover, #titan:hover
+{
+    border-bottom: 2px solid rgba(199, 187, 187, 0.407);  
+}
 .destinations
 {
     font-family:'Barlow Condensed', sans-serif;
     font-size: 18px;
     letter-spacing: 2.7px;
     height:1.5rem;
+    border-bottom: 2px solid transparent;
 }
-.selected-destination
+#selected-destination
 {
     font-family:'Bellefair', serif;
     font-size: 100px;
     font-weight: 500;
-    margin:2.5rem 0 0;
+    margin:2.25rem 0 0;
 }
 .about-destination p
 {
@@ -125,4 +131,34 @@ section
     font-size:1.2rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
+}
+#heading{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.2rem;
+}
+#n{
+    color: rgb(106, 104, 104);
+    margin-right: 1rem;
+    font-weight: 1000;
+}
+.destination-stats{
+    display: flex;
+    justify-content:space-between;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.25rem;
+    margin:3rem 0 0;
+    letter-spacing: 0.15rem;
+    border-top: 1px solid grey;
+}
+/* .travel-time{
+    margin-right:6rem;
+} */
+.distance, .travel-time{
+    margin:2.5rem 4rem 0 0;
+}
+.distance h2, .travel-time h2{
+    margin-top: 0.5rem;
 }

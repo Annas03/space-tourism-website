@@ -98,16 +98,10 @@ section
     align-items: center;
     list-style-type: none;
 }
-#moon
-{
-    font-size: 20px;
-    font-weight:500;
-    border-bottom: 2px solid white;
-}
-#mars:hover, #europa:hover, #titan:hover
+/* #mars:hover, #europa:hover, #titan:hover
 {
     border-bottom: 2px solid rgba(199, 187, 187, 0.407);  
-}
+} */
 .destinations
 {
     font-family:'Barlow Condensed', sans-serif;

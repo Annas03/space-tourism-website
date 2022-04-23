@@ -1,0 +1,69 @@
+body
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url("assets/crew/");
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+}
+header
+{
+    display: flex;
+    width:90vw;
+    margin:5.2rem auto 0;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 1.3rem;
+    position: relative;
+    
+}
+.line
+{
+    width:39rem;
+    height:0.1em;
+    background-color:rgba(108, 99, 99, 0.259);
+    margin-left: 5rem;
+    z-index: 1;
+}
+.nav-bar
+{
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    width:57rem;
+    right: -1%;
+    padding-left: 6rem;
+    backdrop-filter:blur(30px);
+    min-height:2rem;
+}
+#two:hover, #three:hover, #four:hover
+{
+    border-bottom: 2px solid rgba(199, 187, 187, 0.407);  
+}
+#one
+{
+    border-bottom: 2px solid white;
+}
+.nav-item 
+{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 4.7rem;
+    margin-right: 1.5rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    padding:2rem 0;
+    border-bottom: 2px solid transparent;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+}
+.num
+{
+    font-weight: bold;
+}

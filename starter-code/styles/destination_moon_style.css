@@ -78,10 +78,6 @@ section
     align-items: center;
     margin-top: 3.5rem;
 }
-/* .left-div, .right-div
-{
-    border: 1px solid green;
-} */
 .right-div
 {
     width: 29rem;
@@ -98,10 +94,6 @@ section
     align-items: center;
     list-style-type: none;
 }
-/* #mars:hover, #europa:hover, #titan:hover
-{
-    border-bottom: 2px solid rgba(199, 187, 187, 0.407);  
-} */
 .destinations
 {
     font-family:'Barlow Condensed', sans-serif;
@@ -147,9 +139,6 @@ section
     letter-spacing: 0.15rem;
     border-top: 1px solid grey;
 }
-/* .travel-time{
-    margin-right:6rem;
-} */
 .distance, .travel-time{
     margin:2.5rem 4rem 0 0;
 }

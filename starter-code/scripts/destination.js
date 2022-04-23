@@ -33,19 +33,17 @@ function removeStyle(x){
         }
     }
 }
-// function hoveringeffect(e){
-//     let arr = ["moon", "mars", "europa", "titan"]
-//     for(let i = 0; i <= 3; i++){
-//         if(arr[i] != e){
-//             document.getElementById(arr[i]).style.borderBottom = "2px solid rgba(199, 187, 187, 0.407)"
-//             document.getElementById(arr[i]).style.fontSize = "19px"
-//         }
-//     }
-// }
-// function nothoveringeffect(f){
-//     document.getElementById(f).style.borderBottom ="2px solid transparent"
-//     document.getElementById(f).style.fontSize = "18px"
-// }
+function hoveringeffect(e){
+    if(active != e){
+        document.getElementById(e).style.borderBottom = "2px solid rgba(199, 187, 187, 0.407)"
+    }
+}
+function nothoveringeffect(f){
+    if(active != f){
+        document.getElementById(f).style.borderBottom ="2px solid transparent"
+        document.getElementById(f).style.fontSize = "18px"
+    }
+}
 
 moonSelected()
 
@@ -73,9 +71,8 @@ function europaSelected(){
     changeData(2)
 }
 function titanSelected(){
-    active = "europa"
+    active = "titan"
     removeStyle(3)
     changeStyle("titan")
     changeData(3)
 }
-

@@ -22,27 +22,28 @@
   </header>
 
   <section>
-    <h1 id = "heading"><span id = "n">02</span> MEET YOUR CREW</h1>
     <div class="main-content">
       <div class="left-div">
-        <h2>Commander</h2>
-        <h1>Douglas Hurley</h1>
-        <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+        <h1 id = "heading"><span id = "n">02</span> MEET YOUR CREW</h1>
+        <h2 id = "Sndhead">COMMANDER</h2>
+        <h1 id = "person">DOUGLAS HURLEY</h1>
+        <p id = "text">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
           and former NASA astronaut. He launched into space for the third time as 
           commander of Crew Dragon Demo-2.</p>
         <div class="crew-list">
           <ul class="crew-buttons">
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
-            <li><button></button></li>
+            <li><button onmouseover="hoveringeffect('commander')" onmouseout="nothoveringeffect('commander')" id = 'commander'></button></li>
+            <li><button onmouseover="hoveringeffect('mission-specialist')" onmouseout="nothoveringeffect('mission-specialist')" id = 'mission-specialist'></button></li>
+            <li><button onmouseover="hoveringeffect('pilot')" onmouseout="nothoveringeffect('pilot')" id = 'pilot'></button></li>
+            <li><button onmouseover="hoveringeffect('engineer')" onmouseout="nothoveringeffect('engineer')" id = 'engineer'></button></li>
           </ul>
         </div>
       </div>
       <div class="right-div">
-        <img src="assets/crew/image-douglas-hurley.png">
+        <img id = "person-image"src="assets/crew/image-douglas-hurley.png">
       </div>
     </div>
   </section>
+  <script src="../starter-code/scripts/crew.js" async></script>
 </body>
 </html>

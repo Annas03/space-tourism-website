@@ -16,15 +16,14 @@ header
     justify-content:flex-start;
     align-items: center;
     font-size: 1.3rem;
-    position: relative;
-    
+    position: relative;   
 }
 .line
 {
     width:39rem;
-    height:0.1em;
-    background-color:rgba(108, 99, 99, 0.259);
-    margin-left: 5rem;
+    height:0.12em;
+    background-color:rgba(196, 192, 192, 0.259);
+    margin-left: 7rem;
     z-index: 1;
 }
 .nav-bar

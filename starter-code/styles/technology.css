@@ -31,11 +31,13 @@ header
     position: absolute;
     display: flex;
     list-style-type: none;
-    width:57rem;
-    right: -1%;
+    /* width:50vw; */
+    width:60rem;
+    right: -5%;
     padding-left: 6rem;
     backdrop-filter:blur(30px);
-    min-height:2rem;
+    min-height:3rem;
+
 }
 #one:hover, #three:hover, #two:hover
 {

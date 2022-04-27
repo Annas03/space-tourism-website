@@ -1,0 +1,143 @@
+body
+{
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header
+{
+    display: flex;
+    width:90vw;
+    margin:5.2rem auto 0;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 1.3rem;
+    position: relative;   
+}
+.line
+{
+    width:39rem;
+    height:0.12em;
+    background-color:rgba(196, 192, 192, 0.259);
+    margin-left: 7rem;
+    z-index: 1;
+}
+.nav-bar
+{
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    width:57rem;
+    right: -1%;
+    padding-left: 6rem;
+    backdrop-filter:blur(30px);
+    min-height:2rem;
+}
+#one:hover, #three:hover, #two:hover
+{
+    border-bottom: 2px solid rgba(199, 187, 187, 0.407);  
+}
+#four
+{
+    border-bottom: 2px solid white;
+}
+.nav-item 
+{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 4.7rem;
+    margin-right: 1.5rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    padding:2rem 0;
+    border-bottom: 2px solid transparent;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+}
+.num
+{
+    font-weight: bold;
+}
+section
+{
+    width: 75vw;
+    margin:7rem auto 0;
+}
+/* .main-content, .left-div, .right-div, .center-div{
+    border: 1px solid white;
+} */
+#heading{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.2rem;
+}
+#n{
+    color: rgb(106, 104, 104);
+    margin-right: 1rem;
+    font-weight: 1000;
+}
+.main-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center-div{
+    /* margin:auto 10rem auto 5rem; */
+    width: 50%;
+    height:19rem;
+    text-align: center;
+}
+.center-div h2{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-top: 0;
+}
+.center-div h1{
+    font-family:'Bellefair', serif;
+    font-size: 60px;
+    font-weight: 300;
+    margin-top:0;
+    margin-bottom:0;
+}
+.center-div p{
+    width:80%;
+    margin:2rem auto 0;
+    font-family:'Barlow Condensed', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+}
+.buttons-list{
+    margin:0 auto 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+/* #first-btn{
+    background-color: white;
+} */
+#first-btn, #second-btn{
+    margin-bottom: 3rem;
+
+}
+.buttons button{
+    width:4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    color:white;
+    font-size:25px;
+    background-color: transparent;
+}

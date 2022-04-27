@@ -5,28 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/technology.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
+  <header>
+    <img src="assets/shared/logo.svg">
+    <span class = "line"></span>
+    <ul class = "nav-bar">
+      <li id = "one" class = "nav-item"><a href="index.html"><span class = "num">00</span> HOME</a></li>
+      <li id = "two" class = "nav-item"><a href="destination-moon.html"><span class = "num">01</span> DESTINATION</a></li>
+      <li id = "three" class = "nav-item"><a href="crew-commander.html"><span class = "num">02</span> CREW</a></li>
+      <li id = "four" class = "nav-item"><a href="#"><span class = "num">03</span> TECHNOLOGY</a></li>
+    </ul>
+  </header>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Space capsule
-
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-  you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.
+  <section>
+    <h1 id = "heading"><span id = "n">03</span> SPACE LAUNCH 101</h1>
+    <div class="main-content">
+      <div class="left-div">
+        <ul class = "buttons-list">
+          <li id="first-btn" class = "buttons"><button>1</button></li>
+          <li id="second-btn" class = "buttons"><button>2</button></li>
+          <li id="third-btn" class = "buttons"><button>3</button></li>
+        </ul>
+      </div>
+      <div class="center-div">
+        <h2>THE TERMINOLOGY...</h2>
+        <h1 id = "technology"></h1>
+        <p id="about-technology"></p>
+      </div>
+      <div class="right-div">
+        <img id = "tech-image">
+      </div>
+    </div>
+  </section>
+  <script src="../starter-code/scripts/technology.js" async></script>
 </body>
 </html>

@@ -23,9 +23,9 @@ header
 .line
 {
     width:39rem;
-    height:0.1em;
-    background-color:rgba(108, 99, 99, 0.259);
-    margin-left: 5rem;
+    height:0.12em;
+    background-color:rgba(196, 192, 192, 0.259);
+    margin-left: 7rem;
     z-index: 1;
 }
 .nav-bar
@@ -33,11 +33,13 @@ header
     position: absolute;
     display: flex;
     list-style-type: none;
-    width:57rem;
-    right: -1%;
+    /* width:50vw; */
+    width:60rem;
+    right: -5%;
     padding-left: 6rem;
     backdrop-filter:blur(30px);
-    min-height:2rem;
+    min-height:3rem;
+
 }
 #two:hover, #three:hover, #four:hover
 {

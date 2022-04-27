@@ -2,7 +2,7 @@ let tech = document.getElementById("technology")
 let about = document.getElementById("about-technology")
 let img = document.getElementById("tech-image")
 
-let active = "first-btn"
+let active = "vehicle"
 
 function changeData(n){
     fetch("data.json")
@@ -14,15 +14,51 @@ function changeData(n){
 }
 
 function VehicleSelected(){
+    active = "vehicle"
+    removeStyle(0)
+    changeStyle("vehicle")
     changeData(0)
 }
 
 function SpaceportSelected(){
+    active = "spaceport"
+    removeStyle(1)
+    changeStyle("spaceport")
     changeData(1)
 }
 
 function SpaceCapsuleSelected(){
+    active = "spacecapsule"
+    removeStyle(2)
+    changeStyle("spacecapsule")
     changeData(2)
+}
+
+function changeStyle(s){
+    let x = document.getElementById(s)
+    x.style.backgroundColor = "white"
+    x.style.color = "black"
+}
+
+function removeStyle(x){
+    let arr = ["vehicle", "spaceport", "spacecapsule"]
+    for(let i = 0; i <= 2; i++){
+        if(arr[i] != x){
+            document.getElementById(arr[i]).style.backgroundColor = "transparent"
+            document.getElementById(arr[i]).style.color = "white"
+            document.getElementById(arr[i]).style.borderColor = "rgb(53, 53, 53)"
+        }
+    }
+}
+function hoveringeffect(e){
+    if(active != e){
+        document.getElementById(e).style.borderColor = "white"
+    }
+}
+function nothoveringeffect(f){
+    if(active != f){
+        document.getElementById(f).style.borderColor = "rgb(53, 53, 53)"
+    }
 }
 
 VehicleSelected()

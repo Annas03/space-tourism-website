@@ -38,7 +38,7 @@ header
     width:60rem;
     right: -5%;
     padding-left: 6rem;
-    backdrop-filter:blur(500px);
+    backdrop-filter:blur(30px);
     min-height:3rem;
 
 }

@@ -125,8 +125,9 @@ section
     list-style-type: none;
     padding-left: 0;
 }
-/* #first-btn{
+/* #first-btn button{
     background-color: white;
+    color:black;
 } */
 #first-btn, #second-btn{
     margin-bottom: 3rem;
@@ -136,7 +137,7 @@ section
     width:4.5rem;
     height: 4.5rem;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid rgb(53, 53, 53);
     color:white;
     font-size:25px;
     background-color: transparent;

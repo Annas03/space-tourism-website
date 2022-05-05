@@ -6,7 +6,7 @@ let img = document.getElementById("person-image")
 let active = "commander"
 
 function changeData(n){
-    fetch("data.json")
+    fetch("data/data.json")
     .then(des_obj => des_obj.text())
     .then(obj=>{main = JSON.parse(obj)
         position.innerText = main["crew"][n]["role"]

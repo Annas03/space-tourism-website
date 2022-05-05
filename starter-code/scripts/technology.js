@@ -5,7 +5,7 @@ let img = document.getElementById("tech-image")
 let active = "vehicle"
 
 function changeData(n){
-    fetch("data.json")
+    fetch("data/data.json")
     .then(des_obj => des_obj.text())
     .then(obj=>{main = JSON.parse(obj)
         tech.innerText = main["technology"][n]["name"]

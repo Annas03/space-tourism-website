@@ -7,7 +7,7 @@ let img = document.getElementById("star")
 let active = "moon"
 
 function changeData(n){
-    fetch("data/data.json")
+    fetch("data.json")
     .then(des_obj => des_obj.text())
     .then(obj=>{main = JSON.parse(obj)
         selDes.innerText = main["destinations"][n]["name"]

@@ -145,7 +145,7 @@ section
     background-color: transparent;
 }
 
-@media screen and (min-width:1440px) and (max-width:1920px) {
+@media screen and (min-width:1440px) and (max-width:1700px) {
     header{
         display: flex;
         width:93vw;
@@ -189,7 +189,7 @@ section
         word-spacing: 0.3rem;
         letter-spacing: 0.15rem;
         font-size: 1rem;
-        padding:2rem 0;
+        padding: 2rem 0;
         border-bottom: 2px solid transparent;
     }
     a{
@@ -202,7 +202,7 @@ section
     section{
         width: 90vw;
         float:right;
-        margin:7rem auto 0;
+        margin:5rem auto 0;
         /* border: 1px solid white; */
     }
     .main-content{
@@ -212,5 +212,132 @@ section
         align-items: center;
         width: 100%;
         float:left;
+    }
+    .buttons button{
+        width:4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: 1px solid rgb(53, 53, 53);
+        color:white;
+        font-size:25px;
+        background-color: transparent;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1399px){
+    body{
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+    header
+    {
+        /* border: 1px solid green; */
+        display: flex;
+        width:100vw;
+        margin:0;
+        justify-content:space-between;
+        align-items: center;
+        font-size: 1.3rem;
+        /* position: relative;    */
+    }
+    .line
+    {
+        display: none;
+    }   
+    header .nav-bar
+    {
+        position: relative;
+        display: flex;
+        list-style-type: none;
+        width:auto;
+        margin:0;
+        right: 0;
+        padding-left: 0;
+        backdrop-filter:blur(30px);
+        min-height:3rem;
+    }
+    header img{
+        margin-left:1.5rem;
+    }
+    .num
+    {
+        display: none;
+    }
+    .nav-item 
+    {   
+        font-family: 'Barlow Condensed', sans-serif;
+        margin:0.5rem 1.5rem 0.5rem 1.5rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.1rem;
+        padding:2rem 0;
+        border-bottom: 2px solid transparent;
+    }
+    section
+    {
+        width: 100vw;
+        margin:5rem auto 0;
+    }
+    .main-content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .right-div{
+        order: 1;
+    }
+    .left-div{
+        order: 2;
+    }
+    .center-div{
+        order:3;
+    }
+    .buttons-list{
+        display: flex;
+        justify-content: space-around;
+        margin:4rem auto 2rem;
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .buttons button{
+        margin:auto 1rem;
+        width:4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: 1px solid rgb(53, 53, 53);
+        color:white;
+        font-size:25px;
+        background-color: transparent;
+    }
+    #first-btn, #second-btn{
+        margin-bottom: 0;
+    }
+    .center-div{
+        width: 75%;
+        height:auto;
+        text-align: center;
+    }
+    .center-div h2{
+        font-family:'Barlow Condensed', sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        margin-top: 0;
+    }
+    .center-div h1{
+        font-family:'Bellefair', serif;
+        font-size: 50px;
+        font-weight: 300;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .center-div p{
+        width:80%;
+        margin:2rem auto 5rem;
+        font-family:'Barlow Condensed', sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+        line-height: 2rem;
     }
 }

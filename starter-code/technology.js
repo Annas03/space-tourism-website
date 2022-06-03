@@ -10,7 +10,13 @@ function changeData(n){
     .then(obj=>{main = JSON.parse(obj)
         tech.innerText = main["technology"][n]["name"]
         about.innerText = main["technology"][n]["description"]
-        img.src = main["technology"][n]["images"]["portrait"]})
+        if(screen.width >= 1440){
+            img.src = main["technology"][n]["images"]["portrait"]
+        }
+        else{
+            img.src = main["technology"][n]["images"]["landscape"]
+        }
+    })
 }
 
 function VehicleSelected(){

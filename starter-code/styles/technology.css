@@ -604,10 +604,13 @@ section
         background-repeat: no-repeat;
         background-size: cover;
     }
+    #tech-image{
+        width:100vw;
+    }
     header
     {
         display: flex;
-        width:100vw;
+        width:90vw;
         margin:1.7rem;
         justify-content:space-between;
         align-items: center;
@@ -618,6 +621,8 @@ section
         position: relative;
         border: 0;
         z-index: 2;
+        right: 5;
+
     }
     #mobile-menu, #mobile-menu::before, #mobile-menu::after{
         width: 2.25rem;
@@ -695,39 +700,39 @@ section
         padding-left: 0;
     }
     .buttons button{
-        margin:auto 1rem;
-        width:4.5rem;
-        height: 4.5rem;
+        margin:auto 0.5rem;
+        width:3.5rem;
+        height: 3.5rem;
         border-radius: 50%;
         border: 1px solid rgb(53, 53, 53);
         color:white;
-        font-size:25px;
+        font-size:20px;
         background-color: transparent;
     }
     #first-btn, #second-btn{
         margin-bottom: 0;
     }
     .center-div{
-        width: 75%;
+        width: 85%;
         height:auto;
         text-align: center;
     }
     .center-div h2{
         font-family:'Barlow Condensed', sans-serif;
-        font-size: 25px;
+        font-size: 21px;
         font-weight: 500;
         letter-spacing: 0.1rem;
         margin-top: 0;
     }
     .center-div h1{
         font-family:'Bellefair', serif;
-        font-size: 50px;
+        font-size: 30px;
         font-weight: 300;
         margin-top:0;
         margin-bottom:0;
     }
     .center-div p{
-        width:80%;
+        width:100%;
         margin:2rem auto 5rem;
         font-family:'Barlow Condensed', sans-serif;
         font-size: 19px;

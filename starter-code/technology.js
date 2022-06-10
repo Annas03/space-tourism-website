@@ -3,6 +3,7 @@ let about = document.getElementById("about-technology")
 let img = document.getElementById("tech-image")
 let navBar = document.querySelector(".mobile-navbar")
 let body = document.getElementsByTagName("body")
+let images = [];
 
 let active = "vehicle"
 let menuActive = false
@@ -14,11 +15,17 @@ function changeData(n){
         tech.innerText = main["technology"][n]["name"]
         about.innerText = main["technology"][n]["description"]
         if(screen.width >= 1200){
-            img.src = main["technology"][n]["images"]["portrait"]
+            for(let i = 0; i < 3; i++){
+                images.push(main["technology"][i]["images"]["portrait"])
+            }
         }
         else{
-            img.src = main["technology"][n]["images"]["landscape"]
+            for(let i = 0; i < 3; i++){
+                img.src = main["technology"][i]["images"]["landscape"]
+                images.push(main["technology"][i]["images"]["landscape"])
+            }
         }
+        img.src = images[n]
     })
 }
 
@@ -77,6 +84,7 @@ function DisplayMenu(){
     } 
     else{
         navBar.style.display = "none"
+        document.body.style.overflowY = "auto"
     }
     menuActive = !menuActive;
 }

@@ -1,8 +1,11 @@
 let tech = document.getElementById("technology")
 let about = document.getElementById("about-technology")
 let img = document.getElementById("tech-image")
+let navBar = document.querySelector(".mobile-navbar")
+let body = document.getElementsByTagName("body")
 
 let active = "vehicle"
+let menuActive = false
 
 function changeData(n){
     fetch("data.json")
@@ -10,7 +13,7 @@ function changeData(n){
     .then(obj=>{main = JSON.parse(obj)
         tech.innerText = main["technology"][n]["name"]
         about.innerText = main["technology"][n]["description"]
-        if(screen.width >= 1440){
+        if(screen.width >= 1200){
             img.src = main["technology"][n]["images"]["portrait"]
         }
         else{
@@ -66,9 +69,23 @@ function nothoveringeffect(f){
         document.getElementById(f).style.borderColor = "rgb(53, 53, 53)"
     }
 }
+function DisplayMenu(){
+    if(menuActive === false){
+        navBar.style.display = "block"
+        document.body.style.height = "100%"
+        document.body.style.overflowY = "hidden"
+    } 
+    else{
+        navBar.style.display = "none"
+    }
+    menuActive = !menuActive;
+}
 
 VehicleSelected()
 
 document.getElementById("first-btn").addEventListener("click", VehicleSelected);
 document.getElementById("second-btn").addEventListener("click", SpaceportSelected);
 document.getElementById("third-btn").addEventListener("click", SpaceCapsuleSelected);
+document.getElementById("third-btn").addEventListener("click", SpaceCapsuleSelected);
+document.getElementById("mobile-menu").addEventListener("click", DisplayMenu);
+

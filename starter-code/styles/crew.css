@@ -8,7 +8,6 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100vw;
-    /* min-height: 100vh; */
 }
 header
 {
@@ -34,7 +33,6 @@ header
     position: absolute;
     display: flex;
     list-style-type: none;
-    /* width:50vw; */
     width:60rem;
     right: -5%;
     padding-left: 6rem;
@@ -85,7 +83,6 @@ section
     display: flex;
     justify-content: space-around;
     align-items:flex-end;
-    /* height: 44rem; */
 }
 .left-div{
     margin-right:10%;
@@ -149,3 +146,200 @@ li button{
     font-size: 18px;
     max-width: 80%;
 }
+@media screen and (min-width:1440px) and (max-width:1700px) {
+    body{
+        background-size: cover;
+    }
+    header{
+        display: flex;
+        width:93vw;
+        margin:4rem auto 0;
+        justify-content:flex-start;
+        align-items: center;
+        font-size: 1rem;
+        position: relative;   
+    }
+    .line{
+        width:34%;
+        height:0.12em;
+        background-color:rgba(196, 192, 192, 0.259);
+        margin-left: 5%;
+        z-index: 1;
+    }
+    .nav-bar{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        width:63%;
+        max-width: 1000px;
+        right: -3.6%;
+        padding-left: 0rem;
+        backdrop-filter:blur(30px);
+        min-height:3rem;
+
+    }
+    .nav-item {
+        font-family: 'Barlow Condensed', sans-serif;
+        margin: auto 7.8% auto 0;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.15rem;
+        font-size: 1rem;
+        padding: 2rem 0;
+        border-bottom: 2px solid transparent;
+    }
+    #heading{
+        margin-bottom: 5rem;
+        margin-top: 0;
+        font-family:'Barlow Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+        word-spacing: 0.2rem;
+    }
+    section
+    {
+        width: 75vw;
+    }
+    .left-div{
+        margin-right:0;
+        align-self: flex-start;
+    }
+    #Sndhead{
+        font-family:'Bellefair', serif;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: grey;
+        margin-bottom: 1rem;
+    }
+    .crew-list{
+        margin-top:0;
+    }
+    #text{
+        margin-bottom: 9rem;
+        max-width: 75%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:840px){
+    body{
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+    header
+    {
+        display: flex;
+        width:auto;
+        margin:0;
+        justify-content:space-between;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .line
+    {
+        display: none;
+    }   
+    header .nav-bar
+    {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        width:27rem;
+        margin:0;
+        right: 0;
+        padding-left: 0;
+        backdrop-filter:blur(30px);
+        min-height:3rem;
+    }
+    header img{
+        margin-left:1.5rem;
+    }
+    .num
+    {
+        display: none;
+    }
+    .nav-item 
+    {   
+        font-family: 'Barlow Condensed', sans-serif;
+        margin:0 1.5rem 0 0.8rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.15rem;
+        padding:2rem 0;
+        border-bottom: 2px solid transparent;
+    }
+    section
+    {
+        position: relative;
+        width: 100%;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%);
+        margin:0 auto;
+    
+    }
+    .main-content
+    {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left-div{
+        margin: auto;
+        text-align: center;
+    }
+    #heading{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-top:2rem;
+        text-align: start;
+    }
+    #person{
+        font-size: 2.5rem;
+    }
+    #Sndhead{
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.7rem;
+    }
+    #text{
+        width:73.5%;
+        margin:auto;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+        font-size: 19px;
+
+    }
+    .crew-list{
+        margin-top:4rem;
+        margin-bottom: 2rem;
+    }
+    .crew-buttons{
+        margin:auto;
+        width:8rem;
+        padding-left:0;
+        list-style-type: none;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li button{
+        content: none;
+        width:15px;
+        height:15px;
+        border-radius: 50%;
+        border: transparent;
+        background-color: rgb(59, 59, 59);
+    }
+    #person-image{
+        height: 31rem;
+    }
+}
+/* @media screen and (min-width:841px) and (max-width:1200px){
+    body{
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+} */

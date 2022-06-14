@@ -41,7 +41,6 @@ header
     position: absolute;
     display: flex;
     list-style-type: none;
-    /* width:50vw; */
     width:60rem;
     right: -5%;
     padding-left: 6rem;
@@ -85,9 +84,6 @@ section
     width: 75vw;
     margin:7rem auto 0;
 }
-/* .main-content, .left-div, .right-div, .center-div{
-    border: 1px solid white;
-} */
 #heading{
     font-family:'Barlow Condensed', sans-serif;
     font-weight: 500;
@@ -107,7 +103,6 @@ section
     align-items: center;
 }
 .center-div{
-    /* margin:auto 10rem auto 5rem; */
     width: 50%;
     height:19rem;
     text-align: center;
@@ -140,10 +135,6 @@ section
     list-style-type: none;
     padding-left: 0;
 }
-/* #first-btn button{
-    background-color: white;
-    color:black;
-} */
 #first-btn, #second-btn{
     margin-bottom: 3rem;
 
@@ -183,15 +174,12 @@ section
         display: flex;
         justify-content: center;
         list-style-type: none;
-        /* width:50vw; */
         width:63%;
         max-width: 1000px;
         right: -3.6%;
         padding-left: 0rem;
-        /* border: 1px solid white;  */
         backdrop-filter:blur(30px);
         min-height:3rem;
-
     }
     #one:hover, #three:hover, #two:hover{
         border-bottom: 2px solid rgba(199, 187, 187, 0.407);  
@@ -219,10 +207,8 @@ section
         width: 90vw;
         float:right;
         margin:5rem auto 0;
-        /* border: 1px solid white; */
     }
     .main-content{
-        /* border: 1px solid white; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -258,7 +244,6 @@ section
     }   
     header .nav-bar
     {
-        /* border: 1px solid red; */
         position: relative;
         display: flex;
         justify-content: flex-start;
@@ -384,14 +369,9 @@ section
     .line
     {
         display: none;
-        /* width:16rem;
-        height:0.12em;
-        background-color:rgba(196, 192, 192, 0.259);
-        margin-left: 1.5rem; */
     }  
     header .nav-bar
     {
-        border: 1px solid red;
         position: relative;
         display: flex;
         justify-content:space-around;
@@ -565,14 +545,12 @@ section
         width: 100vw;
         float: none;
         margin:5rem auto 0;
-        /* border: 1px solid white; */
     }
     #heading{
         margin-left:4vw;
         margin-bottom: 2vw;
     }
     .main-content{
-        /* border: 1px solid white; */
         display: flex;
         justify-content: center;
         align-items: center;

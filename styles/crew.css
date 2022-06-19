@@ -3,7 +3,7 @@ body
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
     color:white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,7 +242,7 @@ li button{
 }
 @media screen and (min-width:768px) and (max-width:1086px){
     body{
-        background-image: url("../assets/crew/background-crew-tablet.jpg");
+        background-image: url("/assets/crew/background-crew-tablet.jpg");
     }
     header
     {
@@ -361,7 +361,7 @@ li button{
 }
 @media screen and (min-width:1087px) and (max-width:1200px){
     body{
-        background-image: url("../assets/crew/background-crew-tablet.jpg");
+        background-image: url("/assets/crew/background-crew-tablet.jpg");
         height: 100vh;
         overflow-y: hidden;
     }
@@ -482,7 +482,7 @@ li button{
 }
 @media screen and (min-width:1201px) and (max-width:1439px){
     body{
-        background-image: url("../assets/crew/background-crew-tablet.jpg");
+        background-image: url("/assets/crew/background-crew-tablet.jpg");
     }
     header{
         display: flex;
@@ -561,7 +561,7 @@ li button{
 }
 @media screen and (min-width:375px) and (max-width:767px){
     body{
-        background-image: url("../assets/crew/background-crew-mobile.jpg");
+        background-image: url("/assets/crew/background-crew-mobile.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }

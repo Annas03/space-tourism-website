@@ -11,7 +11,7 @@ let menuActive = false
 let styleElem = document.head.appendChild(document.createElement("style"));
 
 function changeData(n){
-    fetch("../starter-code/Data/data.json")
+    fetch("Data/data.json")
     .then(des_obj => des_obj.text())
     .then(obj=>{main = JSON.parse(obj)
         position.innerText = main["crew"][n]["role"]

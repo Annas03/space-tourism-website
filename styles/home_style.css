@@ -3,7 +3,7 @@ body
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-image: url("/assets/home/background-home-desktop.jpg");
     color:white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,7 +140,7 @@ section
 }
 @media screen and (min-width:375px) and (max-width:767px){
     body{
-        background-image: url("../assets/home/background-home-mobile.jpg");
+        background-image: url("/assets/home/background-home-mobile.jpg");
     }
     header
     {
@@ -266,7 +266,7 @@ section
 }
 @media screen and (min-width:768px) and (max-width:1086px){
     body{
-        background-image: url("../assets/home/background-home-tablet.jpg");
+        background-image: url("/assets/home/background-home-tablet.jpg");
     }
     header
     {
@@ -477,7 +477,7 @@ section
 }
 @media screen and (min-width:1087px) and (max-width:1200px){
     body{
-        background-image: url("../assets/home/background-home-tablet.jpg");
+        background-image: url("/assets/home/background-home-tablet.jpg");
         height: 100vh;
         overflow-y: hidden;
     }

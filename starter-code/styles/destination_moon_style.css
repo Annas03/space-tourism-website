@@ -26,12 +26,22 @@ header
     margin-left: 7rem;
     z-index: 1;
 }
+.mobile-navbar{
+    display:none;
+    position: absolute;
+    margin-right: 0;
+    padding:0;
+    right:0;
+    list-style-type: none;
+    height: 100rem;
+    z-index: 2;
+    backdrop-filter:blur(40px);
+}
 .nav-bar
 {
     position: absolute;
     display: flex;
     list-style-type: none;
-    /* width:50vw; */
     width:60rem;
     right: -5%;
     padding-left: 6rem;
@@ -46,6 +56,9 @@ header
 #two
 {
     border-bottom: 2px solid white;
+}
+#mobile-menu{
+    display: none;
 }
 .nav-item 
 {
@@ -145,4 +158,462 @@ section
 }
 .distance h2, .travel-time h2{
     margin-top: 0.5rem;
+}
+@media screen and (min-width:1440px) and (max-width:1700px) {
+    body{
+        background-size: cover;
+    }
+    header{
+        display: flex;
+        width:93vw;
+        margin:4rem auto 0;
+        justify-content:flex-start;
+        align-items: center;
+        font-size: 1rem;
+        position: relative;   
+    }
+    .line{
+        width:36%;
+        height:0.12em;
+        background-color:rgba(196, 192, 192, 0.259);
+        margin-left: 4%;
+        z-index: 1;
+    }
+    .nav-bar{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        width:63%;
+        max-width: 1000px;
+        right: -3.6%;
+        padding-left: 0rem;
+        backdrop-filter:blur(30px);
+        min-height:3rem;
+    }
+    .nav-item {
+        font-family: 'Barlow Condensed', sans-serif;
+        margin: auto 7.8% auto 0;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.15rem;
+        font-size: 1rem;
+        padding: 2rem 0;
+        border-bottom: 2px solid transparent;
+    }
+    .main-content
+    {
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:1201px) and (max-width:1439px){
+    body{
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+    header{
+        display: flex;
+        width:93vw;
+        margin:3rem auto 0;
+        justify-content:flex-start;
+        align-items: center;
+        font-size: 1rem;
+        position: relative;   
+    }
+    .line{
+        width:36%;
+        height:0.12em;
+        background-color:rgba(196, 192, 192, 0.259);
+        margin-left: 4%;
+        z-index: 1;
+    }
+    .nav-bar{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        width:63%;
+        max-width: 1000px;
+        right: -3.6%;
+        padding-left: 0rem;
+        background: rgba(67, 66, 66, 0.5);
+        backdrop-filter: blur(100px);
+        min-height:3rem;
+
+    }
+    .nav-item {
+        margin: auto 5% auto 3%;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.15rem;
+        font-size: 1rem;
+        padding: 2rem 0;
+        border-bottom: 2px solid transparent;
+    }
+    #heading{
+        font-size: 1.7rem;
+    }
+    section
+    {
+        width: 80vw;
+        margin:7rem auto 0;
+    }
+    .main-content
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3.5rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:840px){
+    body{
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+    header
+    {
+        display: flex;
+        width:auto;
+        margin:0;
+        justify-content:space-between;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .line
+    {
+        display: none;
+    }   
+    header .nav-bar
+    {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        width:27rem;
+        margin:0 0.5% 0 0;
+        right: 0;
+        padding-left: 0;
+        background: rgba(67, 66, 66, 0.5);
+        backdrop-filter: blur(100px);
+        min-height:3rem;
+    }
+    header img{
+        margin-left:2rem;
+    }
+    .num
+    {
+        display: none;
+    }
+    .nav-item 
+    {   
+        font-family: 'Barlow Condensed', sans-serif;
+        margin:0 1.5rem 0 0.8rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.15rem;
+        padding:2rem 0;
+        border-bottom: 2px solid transparent;
+    }
+    section
+    {
+        width:90%;
+        max-width: 791px;
+        margin-top: 1.5rem;
+    }
+    .main-content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.5rem;
+    }
+    #heading{
+        font-size: 1.5rem;
+    }
+    #star{
+        height: 32vh;
+    }
+    .right-div
+    {
+        width: 90%;
+        max-width: 791px;
+        text-align: center;
+        margin: 2rem auto 0;
+    }
+    .moon-list
+    {
+        margin: 0 auto;
+    }
+    #selected-destination
+    {
+        font-size: 80px;
+        font-weight: 500;
+        margin:2.25rem 0 0;
+    }
+    .distance{
+        margin:1.5rem 0 0 6rem;
+    }
+    .travel-time{
+        margin:1.5rem 6rem 0 0;
+    }
+    .distance h2, .travel-time h2{
+        font-size: 28px;
+        margin-bottom: 0;
+
+    }
+    .distance span, .travel-time span{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:841px) and (max-width:1200px){
+    body{
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+    header
+    {
+        display: flex;
+        width:99vw;
+        margin: 2% 0 0;
+        justify-content:space-between;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .line
+    {
+        display: none;
+    }  
+    header .nav-bar
+    {
+        position: relative;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        list-style-type: none;
+        max-width:50%;
+        margin:0;
+        right: 0;
+        padding-left: 0;
+        background: rgba(67, 66, 66, 0.5);
+        backdrop-filter: blur(100px);
+        min-height:3rem;
+    }
+    header img{
+        margin-left:2.5rem;
+    }
+    .num
+    {
+        display: none;
+    }
+    .nav-item 
+    {   
+        font-family: 'Barlow Condensed', sans-serif;
+        margin:0 1rem 0 1.5rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.15rem;
+        padding:2rem 0;
+        border-bottom: 2px solid transparent;
+    }
+    section
+    {
+        width:90%;
+        max-width: 800px;
+        margin-top: 3rem;
+    }
+    .main-content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    #heading{
+        font-size: 1.8rem;
+    }
+    #star{
+        height: 35vh;
+    }
+    .right-div
+    {
+        width: 90%;
+        max-width: 791px;
+        text-align: center;
+        margin: 2rem auto 0;
+    }
+    .moon-list
+    {
+        margin: 0 auto;
+    }
+    #selected-destination
+    {
+        font-size: 80px;
+        font-weight: 500;
+        margin:2.25rem 0 0;
+    }
+    .distance{
+        margin:1.5rem 0 0 6rem;
+    }
+    .travel-time{
+        margin:1.5rem 6rem 0 0;
+    }
+    .distance h2, .travel-time h2{
+        font-size: 28px;
+        margin-bottom: 0;
+
+    }
+    .distance span, .travel-time span{
+        font-size: 15px;
+    }
+    .destination-stats{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width:375px) and (max-width:767px){
+    body{
+        background-image: url("../assets/destination/background-destination-mobile.jpg");
+    }
+    header
+    {
+        display: flex;
+        width:90vw;
+        margin:1.7rem;
+        justify-content:space-between;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    #mobile-menu{
+        display: block;
+        position: relative;
+        border: 0;
+        z-index: 3;
+        right: 5;
+
+    }
+    #mobile-menu, #mobile-menu::before, #mobile-menu::after{
+        width: 2.25rem;
+        height:0.25rem;
+        background-color: white;
+    }
+    #mobile-menu::before{
+        position:absolute;
+        content:"";
+        top: 0.55rem;
+        left:50%;
+        transform: translate(-50%);
+    }
+    #mobile-menu::after{
+        position:absolute;
+        content:"";
+        bottom: 0.55rem;
+        left:50%;
+        transform: translate(-50%);
+    }
+    header .nav-bar
+    {
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+    header img{
+        margin-left:0;
+    }
+    .num
+    {
+        display:inline-block;
+    }
+    .nav-item 
+    {   
+        font-family: 'Barlow Condensed', sans-serif;
+        margin:auto 4rem;
+        margin-bottom:3rem;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+        font-size: 1.4rem;
+        border-bottom: 2px solid transparent;
+        padding: 0;
+    }
+    #one{
+        margin-top: 60rem;
+    }
+    #n{
+        margin-right: 0.2rem;
+    }
+    section
+    {
+        width:95%;
+        max-width: 791px;
+        margin-top: 1.5rem;
+    }
+    .main-content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    #heading{
+        text-align: center;
+        font-size: 1rem;;
+        letter-spacing: 0.15rem;
+        word-spacing: 0.15rem;
+    }
+    #star{
+        height: 20vh;
+    }
+    .right-div
+    {
+        width: 90%;
+        max-width: 550px;
+        text-align: center;
+        margin: 1.5rem auto 0;
+    }
+    .moon-list
+    {
+        margin: 0 auto;
+        font-size: 14px;
+        width: 16rem;
+        max-width:20rem;
+        padding-left:0;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    #selected-destination
+    {
+        font-size: 56px;
+        font-weight: 500;
+        margin:2.25rem 0 0;
+    }
+    .about-destination p
+    {
+        margin-top: 0rem;
+        line-height: 25px;
+        font-size:15px;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+    }
+    .distance{
+        margin:1.5rem 0 0 0;
+    }
+    .travel-time{
+        margin:1.5rem 0 0 0;
+    }
+    .distance h2, .travel-time h2{
+        font-size: 28px;
+        margin-bottom: 0;
+        margin-top: 0.2rem;
+
+    }
+    .distance span, .travel-time span{
+        font-size: 15px;
+    }
+    .destination-stats{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
 }

@@ -3,8 +3,13 @@ let destText = document.getElementById("destination-text")
 let distance = document.getElementById("dist")
 let days = document.getElementById("days")
 let img = document.getElementById("star")
+let menu = document.getElementById("mobile-menu")
+let navBar = document.querySelector(".mobile-navbar")
 
 let active = "moon"
+let menuActive = false
+
+let styleElem = document.head.appendChild(document.createElement("style"))
 
 function changeData(n){
     fetch("data.json")
@@ -51,6 +56,7 @@ document.getElementById("moon").addEventListener("click", moonSelected);
 document.getElementById("mars").addEventListener("click", marsSelected);
 document.getElementById("europa").addEventListener("click", europaSelected);
 document.getElementById("titan").addEventListener("click", titanSelected);
+document.getElementById("mobile-menu").addEventListener("click", DisplayMenu);
 
 function moonSelected(){
     active = "moon"
@@ -75,4 +81,27 @@ function titanSelected(){
     removeStyle(3)
     changeStyle("titan")
     changeData(3)
+}
+function DisplayMenu(){
+    if(menuActive === false){
+        navBar.style.display = "block"
+        document.body.style.height = "100%"
+        document.body.style.overflowY = "hidden"
+        img.style.zIndex = 0;
+        ChangeMobileMenu()
+    } 
+    else{
+        navBar.style.display = "none"
+        document.body.style.overflowY = "auto"
+        UnChangeMobileMenu()
+    }
+    menuActive = !menuActive;
+}
+
+function ChangeMobileMenu(){
+    styleElem.innerHTML = "#mobile-menu{margin-top:1rem;margin-right:1rem;transform:rotate(45deg);}#mobile-menu::after{left:0;bottom:0;transform:rotate(-92.5deg);}#mobile-menu::before{display:none;}"
+}
+
+function UnChangeMobileMenu(){
+    styleElem.innerHTML = "#mobile-menu::before{display:span;}"
 }

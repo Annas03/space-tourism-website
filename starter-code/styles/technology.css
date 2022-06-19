@@ -34,7 +34,7 @@ header
     right:0;
     list-style-type: none;
     height: 89rem;
-    border: 1px solid white;
+    backdrop-filter:blur(40px);
 }
 .nav-bar
 {
@@ -178,7 +178,8 @@ section
         max-width: 1000px;
         right: -3.6%;
         padding-left: 0rem;
-        backdrop-filter:blur(30px);
+        background: rgba(67, 66, 66, 0.5);
+        backdrop-filter:blur(100px);
         min-height:3rem;
     }
     #one:hover, #three:hover, #two:hover{
@@ -250,10 +251,11 @@ section
         align-items: center;
         list-style-type: none;
         width:27rem;
-        margin:0;
+        margin:0 0.5% 0 0;
         right: 0;
         padding-left: 0;
-        backdrop-filter:blur(30px);
+        background: rgba(67, 66, 66, 0.5);
+        backdrop-filter:blur(100px);
         min-height:3rem;
     }
     header img{
@@ -381,7 +383,8 @@ section
         margin:0;
         right: 0;
         padding-left: 0;
-        backdrop-filter:blur(30px);
+        background: rgba(67, 66, 66, 0.5);
+        backdrop-filter:blur(100px);
         min-height:3rem;
     }
     header img{
@@ -509,13 +512,12 @@ section
         display: flex;
         justify-content: center;
         list-style-type: none;
-        /* width:50vw; */
         width:63%;
         max-width: 1000px;
         right: -3.6%;
         padding-left: 0rem;
-        /* border: 1px solid white;  */
-        backdrop-filter:blur(30px);
+        background: rgba(67, 66, 66, 0.5);
+        backdrop-filter:blur(100px);
         min-height:3rem;
 
     }
@@ -579,8 +581,6 @@ section
 @media screen and (min-width:375px) and (max-width:767px){
     body{
         background-image: url("../assets/technology/background-technology-mobile.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     #tech-image{
         width:100vw;

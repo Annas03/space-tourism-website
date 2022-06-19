@@ -98,8 +98,10 @@ section
     justify-content: space-around;
     align-items:flex-end;
     position: relative;
+    height: 80vh;
 }
 .left-div{
+    margin-top: 5vw;
     margin-right:10%;
     position: relative;
 
